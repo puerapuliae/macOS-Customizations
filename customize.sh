@@ -12,6 +12,9 @@ sudo scutil --set HostName "x-wing"
 sudo scutil --set LocalHostName "x-wing"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "x-wing"
 
+#change shell to zsh
+chsh -s /bin/zsh
+
 ### make the dock as unobtrusive as possible
 defaults write com.apple.dock tilesize -int 1
 defaults write com.apple.dock pinning -string start
@@ -21,10 +24,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 # tcp segment size to something more 'modern'
 sudo sysctl -w net.inet.tcp.mssdflt=1460
-
-# modify boot time images
-sudo cp backgrounds/BootLogo.png /System/Library/CoreServices/
-sudo cp backgrounds/DefaultDesktop.jpg /System/Library/CoreServices/
 
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
