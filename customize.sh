@@ -16,7 +16,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 chsh -s /bin/zsh
 
 ### make the dock as unobtrusive as possible
-defaults write com.apple.dock tilesize -int 1
+defaults write com.apple.dock tilesize -int 3
 defaults write com.apple.dock pinning -string start
 
 # turn off creation of .DS_Store on network drives
