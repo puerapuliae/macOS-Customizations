@@ -6,6 +6,7 @@ brew tap caskroom/cask
 
 #install apps
 brew cask install firefox
+brew cask install macvim
 brew install the_silver_searcher
 brew install ctags
 
