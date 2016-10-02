@@ -9,6 +9,8 @@ brew cask install firefox
 brew cask install macvim
 brew install the_silver_searcher
 brew install ctags
+brew cask install virtualbox
+brew cask install vagrant
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
