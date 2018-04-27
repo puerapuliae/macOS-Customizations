@@ -16,7 +16,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 chsh -s /bin/zsh
 
 ### make the dock as unobtrusive as possible
-defaults write com.apple.dock tilesize -int 3
+defaults write com.apple.dock tilesize -int 9
 defaults write com.apple.dock pinning -string start
 
 # turn off creation of .DS_Store on network drives
@@ -73,9 +73,6 @@ defaults write com.apple.dock launchanim -bool false
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
-# Enable Safari’s debug menu
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
@@ -118,5 +115,3 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Kill affected applications
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" > /dev/null 2>&1; done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-
-
