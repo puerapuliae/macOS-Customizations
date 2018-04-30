@@ -16,7 +16,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 chsh -s /bin/zsh
 
 ### make the dock as unobtrusive as possible
-defaults write com.apple.dock tilesize -int 9
+defaults write com.apple.dock tilesize -int 20
 defaults write com.apple.dock pinning -string start
 
 # turn off creation of .DS_Store on network drives
@@ -97,7 +97,7 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 defaults write com.apple.dock expose-animation-duration -float 0.01
 
 # Set my preferred desktop background
-sudo cp backgrounds/star_wars_force_awakens.jpg "/Library/Desktop Pictures/"
+sudo cp backgrounds/*.jpg "/Library/Desktop Pictures/"
 defaults write com.apple.desktop Background '{default = {ImageFilePath = "/Library/Desktop Pictures/star_wars_force_awakens.jpg"; };}'
 
 # Show standard unix directories in finder
